@@ -12,10 +12,78 @@
     <script src="../_assets/js/index.js"></script>
     <script src="../js/jquery.mobile-1.4.5.min.js"></script>
     <script src="./index.js"></script>
+    <style>
+        /*.ui-collapsible-content{*/
+            /*padding: 2px;*/
+        /*}*/
+        /*.ui-collapsible-set .ui-btn{*/
+            /*font-size: 16px;*/
+        /*}*/
+
+        /*.ui-collapsible-set .ui-collapsible-set .ui-btn{*/
+            /*font-size: 14px;*/
+        /*}*/
+
+        /*.ui-collapsible-set .ui-collapsible-set .ui-collapsible-set .ui-btn{*/
+            /*font-size: 12px;*/
+        /*}*/
+
+    </style>
 
 </head>
 <body>
 <div data-role="page" class="jqm-demos" data-quicklinks="true">
+
+
+
+
+
+
+    <div role="main" >
+
+            <div data-role="collapsibleset" data-corners="false" >
+                <div data-role="collapsible">
+                    <h3>富士康科技部一组</h3>
+
+
+                    <div data-role="collapsible" data-collapsed-icon="carat-d" data-expanded-icon="carat-u">
+                            <h4>Heading</h4>
+                            <ul data-role="listview" data-inset="false">
+                                <li>Read-only list item 1</li>
+                                <li>Read-only list item 2</li>
+                                <li>Read-only list item 3</li>
+                            </ul>
+                    </div>
+
+                </div>
+                <div data-role="collapsible">
+                    <h3>航海集团技术研发部二零二十组</h3>
+                    <p>Collapsible content</p>
+
+                </div>
+                <div data-role="collapsible">
+                    <h3>富士康科技部九组</h3>
+                    <p>Collapsible content</p>
+                </div>
+            </div>
+    </div>
+
+
+
+
+
+
+
+
+    <div data-role="footer" data-position="fixed"  data-theme="a">
+        <div data-role="navbar">
+            <ul>
+                <li><a href="javascript:" onclick="return false;" data-prefetch="true" data-transition="fade" class="ui-btn-active ui-btn">团队管理</a></li>
+                <li><a href="../ptyg/index.html" data-prefetch="true" data-transition="flip">个人任务管理</a></li>
+                <li><a href="#rightpanel" class="ui-corner-all">...</a></li>
+            </ul>
+        </div>
+    </div>
 
 
     <div data-role="panel" id="rightpanel" data-position="right" data-display="overlay" data-theme="b">
@@ -26,19 +94,6 @@
         法撒旦飞洒发方法
 
     </div>
-
-
-
-    <div data-role="footer" data-position="fixed" data-theme="a">
-        <div data-role="navbar">
-            <ul>
-                <li><a href="javascript:" onclick="return false;" data-prefetch="true" data-transition="fade" class="ui-btn-active ui-btn">团队管理</a></li>
-                <li><a href="../ptyg/index.html" data-prefetch="true" data-transition="flip">个人任务管理</a></li>
-                <li><a href="#rightpanel" class="ui-corner-all">...</a></li>
-            </ul>
-        </div>
-    </div>
-
 
 </div>
 </body>
