@@ -4,6 +4,7 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>团队任务管理</title>
+    <!--<link rel="stylesheet" href="../buttons.css">-->
     <link rel="shortcut icon" href="../favicon.ico">
     <link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Open+Sans:300,400,700">
     <link rel="stylesheet" href="../css/themes/default/jquery.mobile-1.4.5.min.css">
@@ -12,23 +13,7 @@
     <script src="../_assets/js/index.js"></script>
     <script src="../js/jquery.mobile-1.4.5.min.js"></script>
     <script src="./index.js"></script>
-    <style>
-        /*.ui-collapsible-content{*/
-            /*padding: 2px;*/
-        /*}*/
-        /*.ui-collapsible-set .ui-btn{*/
-            /*font-size: 16px;*/
-        /*}*/
 
-        /*.ui-collapsible-set .ui-collapsible-set .ui-btn{*/
-            /*font-size: 14px;*/
-        /*}*/
-
-        /*.ui-collapsible-set .ui-collapsible-set .ui-collapsible-set .ui-btn{*/
-            /*font-size: 12px;*/
-        /*}*/
-
-    </style>
 
 </head>
 <body>
@@ -46,25 +31,99 @@
                     <h3>富士康科技部一组</h3>
 
 
-                    <div data-role="collapsible" data-collapsed-icon="carat-d" data-expanded-icon="carat-u">
-                            <h4>Heading</h4>
-                            <ul data-role="listview" data-inset="false">
-                                <li>Read-only list item 1</li>
-                                <li>Read-only list item 2</li>
-                                <li>Read-only list item 3</li>
-                            </ul>
+                    <div data-role="collapsibleset" data-corners="false" data-collapsed-icon="carat-d" data-expanded-icon="carat-u">
+
+                        <div data-role="collapsible"  val="sstd_1" >
+                            <h3>IPhone 5S手机生产</h3>
+                            <div data-role="collapsibleset" data-corners="false" data-collapsed-icon="arrow-r" data-expanded-icon="arrow-d">
+                                <div data-role="collapsible" val="ssrw_1">
+                                    <h3>粘贴屏幕</h3>
+                                    <div class="div_fh operation" align="center">
+                                        <a class="large green button">分配给员工</a>
+                                        <a class="large red button">删除此工序</a>
+                                    </div>
+                                </div>
+                                <div data-role="collapsible" val="ssrw_1" >
+                                    <h3 >焊接电线</h3>
+                                    <div class="div_fh operation" align="center">
+                                        <a class="large green button">分配给员工</a>
+                                        <a class="large red button">删除此工序</a>
+                                    </div>
+                                </div>
+                                <div data-role="collapsible" val="ssrw_1" >
+                                    <h3 >焊接电线</h3>
+                                    <div class="div_fh operation" align="center">
+                                        <a class="large green button syBtn">分配给员工</a>
+                                        <a class="large red button" syBtn>删除此工序</a>
+                                    </div>
+                                </div>
+
+                                <div id="ssrw_1" class="div_fh operation" align="center">
+                                    <div><span style="color: #630030">单价:5.0元</span> X
+                                         <span style="color: #630030">数量:40</span> =
+                                         <span  style="color: #630030">总价:200元</span></div>
+                                    <br/>
+                                    <a class="large green button syBtn">给<font size="1px">IPhone 5S手机生产</font>添加工序</a>
+                                    <br/>
+                                    <a class="large green button syBtn">修改<font size="1px">IPhone 5S手机生产</font></a>
+                                    <br/>
+                                    <a class="large red button syBtn">删除<font size="1px">IPhone 5S手机生产</font></a>
+                                </div>
+
+                            </div>
+
+
+
+
+                        </div>
+
+                        <div data-role="collapsible" val="sstd_1"  >
+                            <h3 >IPhone 6S手机生产</h3>
+                            <p>
+                            <hr>
+                            <hr>
+                            </p>
+                        </div>
+
+                        <div data-role="collapsible" val="sstd_1">
+                            <h3 >IPhone 7S手机生产</h3>
+                            <p>
+                            <hr>
+                            <hr>
+                            </p>
+                        </div>
+
+                        <div data-role="collapsible" val="sstd_1" >
+                            <h3 >IPhone 8S手机生产</h3>
+                            <p>
+                            <hr>
+                            <hr>
+                            </p>
+                        </div>
+
+                        <div id="sstd_1" class="div_blue operation" align="center">
+                            <a class="large green button syBtn">给<font size="1px">富士康科技部一组</font>添加任务</a><br/>
+                            <a class="large green button syBtn">给<font size="1px">富士康科技部一组</font>添加人员</a><br/>
+                            <a class="large red button syBtn">删除<font size="1px">富士康科技部一组</font></a>
+                        </div>
+
                     </div>
 
+
+
                 </div>
+
+                <br/>
+
                 <div data-role="collapsible">
                     <h3>航海集团技术研发部二零二十组</h3>
                     <p>Collapsible content</p>
+                </div>
+                <div>
 
                 </div>
-                <div data-role="collapsible">
-                    <h3>富士康科技部九组</h3>
-                    <p>Collapsible content</p>
-                </div>
+
+
             </div>
     </div>
 
